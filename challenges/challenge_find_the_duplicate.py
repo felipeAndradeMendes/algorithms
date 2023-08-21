@@ -17,10 +17,3 @@ def find_duplicate(nums):
             return nums[i]
 
     return False
-
-    # raise NotImplementedError
-
-
-# nums = [1, 3, 4, 3, -2]
-# nums = ['a', 'b']
-# print(find_duplicate(nums))

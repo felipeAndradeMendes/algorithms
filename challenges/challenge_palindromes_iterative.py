@@ -9,6 +9,3 @@ def is_palindrome_iterative(word):
         return True
 
     return False
-
-
-print(is_palindrome_iterative("AnA"))
