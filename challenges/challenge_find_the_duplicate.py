@@ -10,14 +10,11 @@ def find_duplicate(nums):
     if has_negative or is_empty or has_single_num:
         return False
 
-    #    nums_sorted = sorted(nums)
-    #     current_num = sorted[0]
+    nums.sort()
 
-    num_organizer = []
-    for num in nums:
-        if num in num_organizer:
-            return num
-        num_organizer.append(num)
+    for i in range(len(nums) - 1):
+        if nums[i] == nums[i + 1]:
+            return nums[i]
 
     return False
 
